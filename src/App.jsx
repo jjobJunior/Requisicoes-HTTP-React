@@ -8,7 +8,7 @@ function App() {
   const [products, setProducts] = useState([]);
 
   //4 - hook customizado
-  const { data: items, httpConfig } = useFetch(url);
+  const { data: items, httpConfig, loading, error } = useFetch(url);
 
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
@@ -51,18 +51,31 @@ function App() {
     setPrice("");
   };
 
+  //Desafio 6
+  const handleRemove = (id) => {
+    httpConfig(id, "DELETE");
+  };
+
   return (
     <>
       <div className="App">
         <h1>Lista de Produtos</h1>
-        <ul>
-          {items &&
-            items.map((product) => (
-              <li key={product.id}>
-                {product.name} - R$: {product.price}
-              </li>
-            ))}
-        </ul>
+
+        {loading && <p>Atualizando os dados...</p>}
+        {error && <p>{error}</p>}
+        {!error && (
+          <ul>
+            {items &&
+              items.map((product) => (
+                <li key={product.id}>
+                  {product.name} - R$: {product.price}
+                  <button onClick={() => handleRemove(product.id)}>
+                    Excluir
+                  </button>
+                </li>
+              ))}
+          </ul>
+        )}
         <div className="add-product">
           <form onSubmit={handleSubmit}>
             <label>
@@ -83,7 +96,9 @@ function App() {
                 onChange={(e) => setPrice(e.target.value)}
               />
             </label>
-            <input type="submit" value="Criar" />
+            {/** 7 - state de loading no post */}
+            {loading && <input type="submit" disabled value="Aguarde" />}
+            {!loading && <input type="submit" value="Criar" />}
           </form>
         </div>
       </div>

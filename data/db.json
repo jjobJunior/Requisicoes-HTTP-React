@@ -16,11 +16,6 @@
       "price": 29.9
     },
     {
-      "id": "a1ec",
-      "name": "boné",
-      "price": "35.25"
-    },
-    {
       "id": "ee64",
       "name": "Mala grande",
       "price": "120.00"
@@ -39,6 +34,36 @@
       "id": "d825",
       "name": "maçã",
       "price": "9.00"
+    },
+    {
+      "id": "ff66",
+      "name": "banana",
+      "price": "4"
+    },
+    {
+      "id": "4df9",
+      "name": "jabuticaba",
+      "price": "15.00"
+    },
+    {
+      "id": "1ece",
+      "name": "melão",
+      "price": "8.65"
+    },
+    {
+      "id": "99fd",
+      "name": "fone de ouvido",
+      "price": "92.99"
+    },
+    {
+      "id": "f623",
+      "name": "microfone",
+      "price": "65.99"
+    },
+    {
+      "id": "237a",
+      "name": "mesa de escritorio",
+      "price": "200.00"
     }
   ]
 }

@@ -56,3 +56,8 @@ form input {
   flex-direction: column;
   margin-bottom: 15px;
 }
+
+ul{
+  display:inline-block;
+  padding-top: 10%;
+}
