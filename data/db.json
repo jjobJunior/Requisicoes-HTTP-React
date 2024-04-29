@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Camisa",
+      "price": 59.9
+    },
+    {
+      "id": "2",
+      "name": "Calça vermelha",
+      "price": 90
+    },
+    {
+      "id": "3",
+      "name": "Boné aba reta",
+      "price": 29.9
+    },
+    {
+      "id": "a1ec",
+      "name": "boné",
+      "price": "35.25"
+    },
+    {
+      "id": "ee64",
+      "name": "Mala grande",
+      "price": "120.00"
+    },
+    {
+      "id": "567c",
+      "name": "Mala média",
+      "price": "85.00"
+    },
+    {
+      "id": "7e5b",
+      "name": "laranja",
+      "price": "3.75"
+    },
+    {
+      "id": "d825",
+      "name": "maçã",
+      "price": "9.00"
+    }
+  ]
+}
